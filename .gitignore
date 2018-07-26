@@ -1,5 +1,6 @@
 # ignore modules pulled in from npm
 node_modules/
+.DS_Store
 
 # rc-apps package output
 # dist/
