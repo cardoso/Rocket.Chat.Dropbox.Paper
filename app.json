@@ -1,15 +1,15 @@
 {
-    "id": "1ba33762-b20c-46d8-8de8-e47c9c7fb561",
-    "version": "0.0.2",
-    "requiredApiVersion": "0.9.13",
-    "iconFile": "icon.png",
-    "author": {
-        "name": "Matheus Cardoso",
-        "homepage": "cardo.so",
-        "support": "cardo.so"
-    },
+    "id": "09a2b0d9-94d0-433d-a53e-3961a3bb0204",
     "name": "Dropbox Paper",
     "nameSlug": "dropbox-paper",
+    "description": "Dropbox Paper integration for Rocket.Chat",
+    "version": "1.0.4",
+    "requiredApiVersion": ">=0.9.6",
+    "author": {
+        "name": "Matheus Cardoso",
+        "homepage": "https://github.com/cardoso",
+        "support": "matheus@cardo.so"
+    },
     "classFile": "DropboxPaperApp.ts",
-    "description": "Dropbox Paper integration for Rocket.Chat"
+    "iconFile": "icon.png"
 }

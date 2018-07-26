@@ -1,3 +1,4 @@
 {
-  "DropboxCreatePaper_Command_Description": "This is a nice command"
+  "DropboxPaperCreate_Command_Description": "This is a nice command",
+  "DropboxPaperCreate_Command_Example": "Example"
 }
