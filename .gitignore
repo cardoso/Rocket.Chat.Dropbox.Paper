@@ -1,0 +1,5 @@
+# ignore modules pulled in from npm
+node_modules/
+
+# rc-apps package output
+# dist/
