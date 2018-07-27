@@ -4,7 +4,6 @@ import { IConfigurationExtend, IEnvironmentRead, } from '@rocket.chat/apps-ts-de
 import { ISetting, SettingType } from '@rocket.chat/apps-ts-definition/settings';
 
 import { DropboxPaperCreateCommand } from './commands/DropboxPaperCreateCommand';
-import { DropboxCredentials } from './DropboxCredentials';
 
 import { SettingToHttpHeader } from './handlers/SettingToHttpHeader';
 

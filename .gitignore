@@ -1,6 +1,3 @@
-# ignore credentials file
-DropboxCredentials.ts
-
 # ignore modules pulled in from npm
 node_modules/
 .DS_Store
