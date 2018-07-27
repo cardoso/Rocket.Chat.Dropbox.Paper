@@ -1,4 +1,6 @@
 {
-  "DropboxPaperCreate_Command_Description": "This is a nice command",
-  "DropboxPaperCreate_Command_Example": "Example"
+  "DropboxPaperCreate_Command_Description": "This command creates and shares a new Dropbox Paper",
+  "DropboxPaperCreate_Command_Example": "Example",
+  "Dropbox_Paper_Api_Token": "An authorized token for use with the Dropbox Paper API",
+  "Dropbox_Paper_Api_Token_Description": "To create a Dropbox API token visit: https://www.dropbox.com/developers/apps/create"
 }
