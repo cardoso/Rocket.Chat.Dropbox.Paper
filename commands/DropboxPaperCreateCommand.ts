@@ -27,8 +27,11 @@ export class DropboxPaperCreateCommand implements ISlashCommand {
             content: title
         });
 
+        const botUsername = await read.getEnvironmentReader().getSettings().getValueById('Dropbox_Paper_Bot');
+        const botUser = await read.getUserReader().getByUsername(botUsername);
+
         const builder = modify.getCreator().startMessage()
-            .setSender(context.getSender())
+            .setSender(botUser || context.getSender())
             .setRoom(context.getRoom())
             .setUsernameAlias('Dropbox Paper')
             .setAvatarUrl('https://cardo.so/Rocket.Chat.Dropbox.Paper/icon.png')

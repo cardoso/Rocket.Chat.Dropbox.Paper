@@ -10,6 +10,16 @@ import { SettingToHttpHeader } from './handlers/SettingToHttpHeader';
 export class DropboxPaperApp extends App {
     protected async extendConfiguration(configuration: IConfigurationExtend, environmentRead: IEnvironmentRead): Promise<void> {
         configuration.settings.provideSetting({
+            id: 'Dropbox_Paper_Bot',
+            type: SettingType.STRING,
+            packageValue: '',
+            required: true,
+            public: false,
+            i18nLabel: 'Dropbox_Paper_Bot',
+            i18nDescription: 'Dropbox_Paper_Bot_Description',
+        });
+
+        configuration.settings.provideSetting({
             id: 'Dropbox_Paper_Api_Token',
             type: SettingType.STRING,
             packageValue: '',
