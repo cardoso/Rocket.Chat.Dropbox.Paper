@@ -28,10 +28,11 @@ export class DropboxPaperCreateCommand implements ISlashCommand {
         });
 
         const builder = modify.getCreator().startMessage()
-            .setSender(context.getSender()).setRoom(context.getRoom())
+            .setSender(context.getSender())
+            .setRoom(context.getRoom())
             .setUsernameAlias('Dropbox Paper')
-            .setAvatarUrl('https://github.com/cardoso/Rocket.Chat.Dropbox.Paper/raw/master/icon.png')
-            .setText(`I'm sharing a Dropbox Paper file: https://paper.dropbox.com/doc/${result.data.doc_id}`);
+            .setAvatarUrl('https://cardo.so/Rocket.Chat.Dropbox.Paper/icon.png')
+            .setText(`@${context.getSender().username} shared a new paper: [${result.data.title || 'Untitled'}](https://paper.dropbox.com/doc/${result.data.doc_id})`);
 
         await modify.getCreator().finish(builder);
     }

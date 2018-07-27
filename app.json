@@ -11,5 +11,5 @@
         "support": "matheus@cardo.so"
     },
     "classFile": "DropboxPaperApp.ts",
-    "iconFile": "icon.png"
+    "iconFile": "docs/icon.png"
 }
