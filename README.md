@@ -12,5 +12,5 @@ This will create a new paper and share the secret link with the room.
 
 ![](docs/screenshot_02.png)
 
-### Planned features
+## Planned features
 See the [issues list](https://github.com/cardoso/Rocket.Chat.Dropbox.Paper/issues)
