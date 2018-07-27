@@ -27,23 +27,10 @@ export class DropboxPaperCreateCommand implements ISlashCommand {
             content: title
         });
 
-        /*if(title) {
-            const arg = {
-                doc_id: result.data.doc_id,
-                doc_update_policy: 'overwrite_all',
-                revision: 0
-            }
-
-            await http.post(`https://api.dropboxapi.com/2/paper/docs/update?arg=${JSON.stringify(arg)}`)
-        }*/
-
-        this.app.getLogger().log('Dropbox:');
-        this.app.getLogger().log(result.data);
-
-        const api = read.getEnvironmentReader().getSettings().getValueById('Dropbox_Paper_Api_Token')
-
         const builder = modify.getCreator().startMessage()
             .setSender(context.getSender()).setRoom(context.getRoom())
+            .setUsernameAlias('Dropbox Paper')
+            .setAvatarUrl('https://github.com/cardoso/Rocket.Chat.Dropbox.Paper/raw/master/icon.png')
             .setText(`I'm sharing a Dropbox Paper file: https://paper.dropbox.com/doc/${result.data.doc_id}`);
 
         await modify.getCreator().finish(builder);
