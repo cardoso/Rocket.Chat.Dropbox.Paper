@@ -6,7 +6,7 @@
 ## Usage
 ### Commands
 This App only supports one command right now:
-`/dropbox-create-paper [Title of Paper] (optional)`
+`/dropbox-paper-create [Title of Paper] (optional)`
 
 This will create a new paper and share the secret link with the room.
 
