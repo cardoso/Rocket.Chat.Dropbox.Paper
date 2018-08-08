@@ -5,6 +5,7 @@ import {
 } from '@rocket.chat/apps-ts-definition/slashcommands';
 
 import { DropboxPaperApp } from '../DropboxPaperApp';
+import { sharePaper } from '../lib/SharePaper';
 
 export class DropboxPaperCreateCommand implements ISlashCommand {
     public command = 'dropbox-paper-create';
@@ -24,19 +25,12 @@ export class DropboxPaperCreateCommand implements ISlashCommand {
         this.app.getLogger().log(arg);
 
         const result = await http.post(`https://api.dropboxapi.com/2/paper/docs/create?arg=${JSON.stringify(arg)}`, { 
-            content: title
+            content: title,
+            headers: {
+                'Content-Type': 'application/octet-stream'
+            }
         });
 
-        const botUsername = await read.getEnvironmentReader().getSettings().getValueById('Dropbox_Paper_Bot');
-        const botUser = await read.getUserReader().getByUsername(botUsername);
-
-        const builder = modify.getCreator().startMessage()
-            .setSender(botUser || context.getSender())
-            .setRoom(context.getRoom())
-            .setUsernameAlias('Dropbox Paper')
-            .setAvatarUrl('https://cardo.so/Rocket.Chat.Dropbox.Paper/icon.png')
-            .setText(`@${context.getSender().username} shared a new paper: [${result.data.title || 'Untitled'}](https://paper.dropbox.com/doc/${result.data.doc_id})`);
-
-        await modify.getCreator().finish(builder);
+        await sharePaper({id: result.data.doc_id, name: title}, context, read, modify);
     }
 }
