@@ -3,7 +3,7 @@
     "name": "Dropbox Paper",
     "nameSlug": "dropbox-paper",
     "description": "Dropbox Paper integration for Rocket.Chat",
-    "version": "1.0.4",
+    "version": "1.1.0",
     "requiredApiVersion": ">=0.9.6",
     "author": {
         "name": "Matheus Cardoso",
