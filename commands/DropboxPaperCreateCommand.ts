@@ -1,8 +1,8 @@
-import { IHttp, IModify, IPersistence, IRead } from '@rocket.chat/apps-ts-definition/accessors';
+import { IHttp, IModify, IPersistence, IRead } from '@rocket.chat/apps-engine/definition/accessors';
 import {
     ISlashCommand,
     SlashCommandContext,
-} from '@rocket.chat/apps-ts-definition/slashcommands';
+} from '@rocket.chat/apps-engine/definition/slashcommands';
 
 import { DropboxPaperApp } from '../DropboxPaperApp';
 import { sharePaper } from '../lib/SharePaper';

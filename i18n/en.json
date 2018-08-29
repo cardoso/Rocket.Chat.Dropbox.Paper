@@ -1,8 +1,9 @@
 {
   "DropboxPaperCreate_Command_Description": "This command creates and shares a new Dropbox Paper",
-  "DropboxPaperCreate_Command_Example": "/dropbox-paper-create Very Important Document",
+  "DropboxPaperCreate_Command_Example": "Very Important Document",
   "DropboxPaperSearch_Command_Description": "This command searches for Dropbox Papers",
-  "DropboxPaperSearch_Command_Example": "/dropbox-paper-search Weekly Meeting Notes",
+  "DropboxPaperSearch_Command_Example": "Weekly Meeting Notes",
+  "DropboxPaperSearch_Command_Preview": "Select a Paper to share",
   "Dropbox_Paper_Bot": "The bot user that will represent Dropbox Paper",
   "Dropbox_Paper_Bot_Description": "Create a bot user and type his username here",
   "Dropbox_Paper_Api_Token": "An authorized token for use with the Dropbox Paper API",

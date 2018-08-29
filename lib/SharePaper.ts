@@ -1,5 +1,5 @@
-import { IModify, IRead } from '@rocket.chat/apps-ts-definition/accessors';
-import { SlashCommandContext } from '@rocket.chat/apps-ts-definition/slashcommands';
+import { IModify, IRead } from '@rocket.chat/apps-engine/definition/accessors';
+import { SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
 
 export async function sharePaper(paper: {id: string, name: string}, context: SlashCommandContext, read: IRead, modify: IModify): Promise<void> {
     const botUsername = await read.getEnvironmentReader().getSettings().getValueById('Dropbox_Paper_Bot');

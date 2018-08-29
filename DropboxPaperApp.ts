@@ -1,7 +1,7 @@
-import { App } from '@rocket.chat/apps-ts-definition/App';
+import { App } from '@rocket.chat/apps-engine/definition/App';
 
-import { IConfigurationExtend, IEnvironmentRead } from '@rocket.chat/apps-ts-definition/accessors';
-import { SettingType } from '@rocket.chat/apps-ts-definition/settings';
+import { IConfigurationExtend, IEnvironmentRead } from '@rocket.chat/apps-engine/definition/accessors';
+import { SettingType } from '@rocket.chat/apps-engine/definition/settings';
 
 import { DropboxPaperCreateCommand } from './commands/DropboxPaperCreateCommand';
 import { DropboxPaperSearchCommand } from './commands/DropboxPaperSearchCommand';

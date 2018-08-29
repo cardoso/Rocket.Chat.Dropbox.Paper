@@ -1,11 +1,11 @@
-import { IHttp, IModify, IPersistence, IRead } from '@rocket.chat/apps-ts-definition/accessors';
+import { IHttp, IModify, IPersistence, IRead } from '@rocket.chat/apps-engine/definition/accessors';
 import {
     ISlashCommand,
     ISlashCommandPreview,
     ISlashCommandPreviewItem,
     SlashCommandContext,
     SlashCommandPreviewItemType,
-} from '@rocket.chat/apps-ts-definition/slashcommands';
+} from '@rocket.chat/apps-engine/definition/slashcommands';
 
 import { DropboxPaperApp } from '../DropboxPaperApp';
 import { sharePaper } from '../lib/SharePaper';
@@ -34,7 +34,7 @@ export class DropboxPaperSearchCommand implements ISlashCommand {
         });
 
         return {
-            i18nTitle: 'Dropbox_Paper_Preview_Title',
+            i18nTitle: 'DropboxPaperSearch_Command_Preview',
             items: result.data.docs.map((doc) => {
                 return {
                     id: doc.doc_id,

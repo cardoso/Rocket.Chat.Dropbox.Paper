@@ -3,11 +3,11 @@
     "name": "Dropbox Paper",
     "nameSlug": "dropbox-paper",
     "description": "Dropbox Paper integration for Rocket.Chat with commands for creating, searching and sharing papers",
-    "version": "1.1.1",
-    "requiredApiVersion": "0.9.6",
+    "version": "2.0.0",
+    "requiredApiVersion": "1.0.0",
     "author": {
         "name": "Matheus Cardoso",
-        "homepage": "https://github.com/cardoso/Rocket.Chat.Dropbox.Paper",
+        "homepage": "https://github.com/cardoso",
         "support": "matheus@cardo.so"
     },
     "classFile": "DropboxPaperApp.ts",
